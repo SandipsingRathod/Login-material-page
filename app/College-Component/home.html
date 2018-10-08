@@ -1,0 +1,85 @@
+<mat-grid-list cols="12" rowHeight="60px">
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list>
+
+  <div class="list">
+  <mat-grid-list cols="12" rowHeight="30px">
+   
+     <div>
+        <a [routerLink]="['/home']">Home</a> &nbsp;
+        <a [routerLink]="['/about']">ABOUT</a> &nbsp;
+        <a [routerLink]="['/result']">RESULT</a> &nbsp;
+     </div>
+      
+    
+  </mat-grid-list>
+  </div>
+
+  
+
+  <mat-grid-list cols="12" rowHeight="30px">
+    <mat-grid-tile>
+       
+       <h5>NMAE OF COLLEGE</h5>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+<div class="list">
+  <mat-grid-list cols="13" rowHeight="30px">
+    <mat-grid-tile>
+
+    </mat-grid-tile>
+       
+    
+  </mat-grid-list>
+</div>
+<marquee>Upcoming Event / News will be displayed in this section</marquee>
+<mat-divider></mat-divider>
+<mat-divider></mat-divider>
+<footer></footer>
+
+
+
+
+       
+
+    
+       
+        <a [routerLink]="['/department']">DEPARTMENT</a>&nbsp;
+        
+       
+        <a [routerLink]="['/faculties']">FACILITIES</a> &nbsp;
+        <a [routerLink]="['/faculty']">FACULTY</a> &nbsp;
+        <a [routerLink]="['/gallery']">GALLERY</a>&nbsp;
+        <a [routerLink]="['/council']">COUNCIL</a> &nbsp;
+        <a [routerLink]="['/tandp']">T and P</a> &nbsp;
+        <a [routerLink]="['/disclosure']">DISCLOSURE</a>&nbsp;
+        <a [routerLink]="['/download']">DOWNLOAD</a> &nbsp;
+        <a [routerLink]="['/sarnaac']">SARNAAC</a> &nbsp;
+        
+        
+        <router-outlet></router-outlet>
+     
+
+        <div class="list">
+            <mat-grid-list cols="12" rowHeight="30px">
+                <mat-grid-tile
+                    *ngFor="let tile3 of tiles3"
+                    [colspan]="tile3.cols"
+                    [rowspan]="tile3.rows"
+                    [style.background]="tile3.color">
+                 
+                  <div class="button-row">
+                      
+                    <button mat-button> {{tile3.text}}</button></div>
+                   
+                </mat-grid-tile>
+              </mat-grid-list>
+            </div>
+      

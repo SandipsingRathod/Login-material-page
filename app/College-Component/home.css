@@ -1,0 +1,31 @@
+.button-row{
+    color: azure;
+    border-bottom-color:solid goldenrod 30px;
+}
+.list{
+    
+        border-bottom: solid 4px goldenrod;
+        min-height: 25px;
+        background: black;
+        
+    }
+    .list:hover{
+        background: goldenrod;
+        border-bottom: solid black 4px;
+    }
+
+    /* .button-row{
+        color: azure;
+        border-bottom-color:solid goldenrod 30px;
+    }
+    .list{
+        
+            border-bottom: solid 4px goldenrod;
+            min-height: 25px;
+            background: black;
+            
+        }
+        .list:hover{
+            background: goldenrod;
+            border-bottom: solid black 4px;
+        } */
